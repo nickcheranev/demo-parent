@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ru.diasoft.digitalq</groupId>
+    <artifactId>demo-parent</artifactId>
+    <version>1.00.01-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Parent for demo</name>
+    <url>http://www.diasoft.com</url>
+    <modules>
+        <module>database</module>
+        <module>service</module>
+        <module>bundle</module>
+    </modules>
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>diasoft_repo</id>
+            <url>http://maven:8080/maven2/repo/</url>
+        </repository>
+    </distributionManagement>
+</project>

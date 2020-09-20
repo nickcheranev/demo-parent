@@ -1,0 +1,4 @@
+# Project exclude paths
+/bundle/target/
+/database/target/
+/service/target/

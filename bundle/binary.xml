@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+    <id>bundle</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <baseDirectory>demo</baseDirectory>
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <fileSets>
+        <!-- documentation -->
+        <fileSet>
+            <directory>../documentation</directory>
+            <outputDirectory>/documentation</outputDirectory>
+        </fileSet>
+    </fileSets>
+
+    <dependencySets>
+        <!-- database -->
+        <dependencySet>
+            <includes>
+                <include>ru.diasoft.digitalq:demo-db</include>
+            </includes>
+            <unpack>false</unpack>
+            <outputDirectory></outputDirectory>
+            <outputFileNameMapping>db-manager-${artifact.version}.${artifact.extension}</outputFileNameMapping>
+        </dependencySet>
+        <!-- service -->
+        <dependencySet>
+            <outputDirectory></outputDirectory>
+            <includes>
+                <include>ru.diasoft.digitalq:demo</include>
+            </includes>
+        </dependencySet>
+    </dependencySets>
+</assembly>
